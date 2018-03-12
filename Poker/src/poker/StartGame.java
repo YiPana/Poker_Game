@@ -17,6 +17,8 @@ public class StartGame implements GlobalVars {
      * @param count
      */
     public StartGame(int count) {
+        
+        HashMapsClass hM = new HashMapsClass();
 
         for (int i = 0; i < CARDS.length; i++) {
             /* 
@@ -27,7 +29,7 @@ public class StartGame implements GlobalVars {
                Column 4 : Spades cards
              */
             //Cell -> Card : 0 -> 2 , 1 -> 3 , 2 -> 4 ... 12 -> 14
-            CARDS[i][0] = HashMapsClass.TRAPOULA.get(i + 2);
+            CARDS[i][0] = hM.TRAPOULA.get(i + 2);
             CARDS[i][1] = CARDS[i][2] = CARDS[i][3] = CARDS[i][4] = "0";
             System.out.println("card is " + CARDS[i][0]);
         }
