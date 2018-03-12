@@ -13,18 +13,23 @@ public class Player implements GlobalVars {
 
     public Card card1, card2;
     private String playerName;
+    private int id;
+    private boolean bActive;
 
     /**
      * Create a new player having as input his default name
      *
      * @param name
      */
-    public Player(String name) {
+    public Player(String name, int id) {
+        this.id = id;
+        bActive = true;
         playerName = name;
         card1 = new Card();
         card2 = new Card();
-        System.out.println(playerName + " has first card value " + card1.getValue() + " ,colour " + card1.getColour());
-        System.out.println(playerName + " has second card value " + card2.getValue() + " ,colour " + card2.getColour());
+        System.out.println("------------- " + playerName + "'s cards -------------");
+        System.out.println("Card value " + card1.getValue() + " ,colour " + card1.getColour());
+        System.out.println("Card value " + card2.getValue() + " ,colour " + card2.getColour());
     }
 
     /**
@@ -36,4 +41,9 @@ public class Player implements GlobalVars {
         playerName = name;
     }
 
+    public int getPlayerID() {
+        return id;
+    }
+
+    
 }

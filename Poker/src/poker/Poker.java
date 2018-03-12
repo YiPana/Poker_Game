@@ -47,6 +47,7 @@ public class Poker {
         //Initialize game
         StartGame st = new StartGame(noOfPlayers);
 
+        st.Flop();
     }
 
 }

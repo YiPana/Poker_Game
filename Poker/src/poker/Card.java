@@ -31,7 +31,7 @@ public class Card implements GlobalVars {
             tmpIntColour = generateCard.nextInt(4) + 1;
             //If the generated card already exists print the message
             if ("1".equals(CARDS[tmpIntValue][tmpIntColour])) {
-                System.out.println("The card " + HashMapsClass.TRAPOULA.get(tmpIntValue + 2) + " with colour " + HashMapsClass.COLOUR.get(tmpIntColour) + " is already in use");
+//                System.out.println("The card " + HashMapsClass.TRAPOULA.get(tmpIntValue + 2) + " with colour " + HashMapsClass.COLOUR.get(tmpIntColour) + " is already in use!!!");
             }
         } while ("1".equals(CARDS[tmpIntValue][tmpIntColour]));
 
@@ -41,7 +41,7 @@ public class Card implements GlobalVars {
         //Apply real card value
         value = tmpIntValue + 2;
         colour = tmpIntColour;
-        System.out.println(value + " or else " + HashMapsClass.TRAPOULA.get(value) + " and colour " + HashMapsClass.COLOUR.get(colour));
+//        System.out.println(value + " or else " + HashMapsClass.TRAPOULA.get(value) + " and colour " + HashMapsClass.COLOUR.get(colour));
 
         sValue = HashMapsClass.TRAPOULA.get(value);
         sColour = HashMapsClass.COLOUR.get(colour);
