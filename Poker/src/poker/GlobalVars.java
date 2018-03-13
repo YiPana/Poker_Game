@@ -5,6 +5,7 @@
  */
 package poker;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -18,6 +19,8 @@ public interface GlobalVars {
      * to distinguish which cards are used by players or not
      */
     public static String[][] CARDS = new String[13][5];
+    
+    ArrayList<Player> PLAYERSLIST = new ArrayList<>();
     
     /**
      * Static table to match the integer value of a card with its name

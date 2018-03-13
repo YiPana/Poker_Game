@@ -5,6 +5,8 @@
  */
 package poker;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author jonnie
@@ -42,18 +44,26 @@ public class StartGame implements GlobalVars {
         if (count >= 2) {
             Player Player1 = new Player("Player1", 1);
             Player Player2 = new Player("Player2", 2);
+            PLAYERSLIST.add(Player1);
+            PLAYERSLIST.add(Player2);
             if (count >= 3) {
                 Player Player3 = new Player("Player3", 3);
+                PLAYERSLIST.add(Player3);
                 if (count >= 4) {
                     Player Player4 = new Player("Player4", 4);
+                    PLAYERSLIST.add(Player4);
                     if (count >= 5) {
                         Player Player5 = new Player("Player5", 5);
+                        PLAYERSLIST.add(Player5);
                         if (count > 6) {
                             Player Player6 = new Player("Player6", 6);
+                            PLAYERSLIST.add(Player6);
                             if (count >= 7) {
                                 Player Player7 = new Player("Player7", 7);
+                                PLAYERSLIST.add(Player7);
                                 if (count >= 8) {
                                     Player Player8 = new Player("Player8", 8);
+                                    PLAYERSLIST.add(Player8);
                                 }
                             }
                         }

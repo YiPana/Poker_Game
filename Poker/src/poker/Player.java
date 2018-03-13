@@ -12,7 +12,8 @@ package poker;
 public class Player implements GlobalVars {
 
     public Card card1, card2;
-    private String playerName;
+    public String playerName;
+    public double coins;
     private int id;
     private boolean bActive;
 
@@ -25,6 +26,7 @@ public class Player implements GlobalVars {
         this.id = id;
         bActive = true;
         playerName = name;
+        coins = 1000;
         card1 = new Card();
         card2 = new Card();
         System.out.println("------------- " + playerName + "'s cards -------------");
@@ -44,6 +46,5 @@ public class Player implements GlobalVars {
     public int getPlayerID() {
         return id;
     }
-
     
 }

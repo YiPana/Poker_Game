@@ -7,6 +7,7 @@ package poker;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.ArrayList;
 
 /**
  *
@@ -22,7 +23,7 @@ public class Poker {
         // TODO code application logic here
 
         //Get the number of players as input
-        System.out.println("enter the number of players among 2 and 8");
+        System.out.println("Enter the number of players among 2 and 8");
         int noOfPlayers = 0;
         boolean b = false;
         Scanner keyboard;
